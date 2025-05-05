@@ -1,0 +1,110 @@
+:root {
+    --cor-fundo: #011627;
+    --cor-principal: #d6deeb;
+    --cor-detalhe: #82AAFF;
+    --cor-destaque: #FFCB8B;
+    --cor-fundo-box: #1e2d3d;
+    --cor-fundo-button: #82AAFF;
+    --cor-botao-texto: #011627;
+    --borda: #1e2d3d;
+    --shadow: rgba(129, 233, 255, 0.2);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--cor-fundo-box);
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background-color: var(--cor-fundo-box);
+    color: var(--cor-detalhe);
+    padding: 15px 0;
+    text-align: center;
+    margin-top: auto;  
+}
+
+
+h1 {
+    color: var(--cor-destaque);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
+img {
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: var(--cor-fundo-button);
+    color: var(--cor-botao-texto);
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+
+button:hover {
+    background-color: #7f9cf5;
+    transform: translateY(-2px);
+}
+
+#busca {
+    margin-top: 30px;
+    display: grid;
+    gap: 16px;
+}
+
+.dados {
+    background-color: var(--cor-fundo-box);
+    border: 1px solid var(--borda);
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.2s ease;
+}
+
+
+.dados:hover {
+    transform: scale(1.02);
+}
+
+.dados p {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+
+.dados strong {
+    color: var(--cor-detalhe);
+}
